@@ -10,10 +10,11 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
-      gameInstance.SetFullscreen(1);
+      //gameInstance.SetFullscreen(1);
     </script>
   </head>
   <body>
+    <script> window.attachEvent("onload", gameInstance.SetFullscreen(1)); </script>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 1920; height: 1080"></div>
       <div class="footer">
