@@ -10,6 +10,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
+      gameInstance.SetFullscreen(1);
     </script>
   </head>
   <body>
